@@ -9,7 +9,6 @@ version '1.0-SNAPSHOT'
 sourceCompatibility = 1.8
 targetCompatibility = 1.8
 
-mainClassName  = "com.vividseats.application.CelebrityApplication"
 
 repositories {
     mavenCentral()
@@ -26,4 +25,7 @@ dependencies {
     testCompile 'junit:junit:4.12'
 }
 
-
+task run (type: JavaExec){
+    main = "com.vividseats.application.CelebrityApplication"
+    classpath = sourceSets.main.runtimeClasspath
+}
