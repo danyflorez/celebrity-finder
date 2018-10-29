@@ -25,8 +25,8 @@ dependencies {
 }
 
 task run (type: JavaExec){
-    if(project.hasProperty('arg')){
-        args(arg.split(' '))
+    if(project.hasProperty('args')){
+        args(args.split(' '))
     }
     main = "com.vividseats.application.CelebrityApplication"
     classpath = sourceSets.main.runtimeClasspath

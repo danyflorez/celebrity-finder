@@ -3,7 +3,7 @@ Algorithm to solve "In a team of n people, a celebrity is known by everyone but 
 
 ## Run the project
 
-gradlew run -Parg="JSON_FILE_PATH"
+gradlew run -Pargs="JSON_FILE_PATH"
 
 The json file should follow this structure
 
